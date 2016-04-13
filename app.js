@@ -36,3 +36,12 @@ if (insurance === 'YES' || insurance === 'Y') {
   alert('Sorry, that\'s wrong.');
   console.log('User said No.');
 }
+
+var cook = prompt(userName + ', do I like to cook? (Yes/No)').toUpperCase();
+if (cook === 'YES' || cook === 'Y') {
+  alert('Correct.');
+  console.log('User said Yes.');
+} else {
+  alert('Sorry, that\'s wrong.');
+  console.log('User said No.');
+}
