@@ -6,71 +6,86 @@ var questions = [', did I go to Iowa State University', ', is one of my goals to
 var responses = ['YES', 'Y'];
 var answers = ['Correct', 'Sorry, wrong.'];
 
-function qCollege() {
-  var college = prompt(userName + questions[0]).toUpperCase();
-  if (college === responses[0] || college === responses[1]) {
-    alert(answers[0]);
-    console.log('User said Yes.');
-    ++gameScore;
-  } else {
-    alert(answers[1]);
-    console.log('User said No.');
+function fiveQuestions() {
+  for (var i = 0; i < questions.length; i++) {
+    var quizz = prompt(userName + ' ' + questions[i]).toUpperCase();
+    if (quizz === responses[0] || quizz === responses[1]) {
+      alert(answers[0]);
+      console.log('answers[0]');
+      ++gameScore;
+    } else {
+      alert(answers[1]);
+      console.log('User said No.');
+    }
   }
 }
+fiveQuestions();
 
-qCollege();
-
-function qPhones() {
-  var phones = prompt(userName + questions[1]).toUpperCase();
-  if (phones === responses[0] || phones === responses[1]) {
-    alert(answers[0]);
-    console.log('User said Yes.');
-    ++gameScore;
-  } else {
-    alert(answers[1]);
-    console.log('User said No.');
-  }
-}
-qPhones();
-
-function qLab() {
-  var lab = prompt(userName + questions[2]).toUpperCase();
-  if (lab === responses[0] || lab === responses[1]) {
-    alert(answers[0]);
-    console.log('User said Yes.');
-    ++gameScore;
-  } else {
-    alert(answers[1]);
-    console.log('User said No.');
-  }
-}
-qLab();
-
-function qInsurance() {
-  var insurance = prompt(userName + questions[3]).toUpperCase();
-  if (insurance === responses[0] || insurance === responses[1]) {
-    alert(answers[0]);
-    console.log('User said Yes.');
-    ++gameScore;
-  } else {
-    alert(answers[1]);
-    console.log('User said No.');
-  }
-}
-qInsurance();
-
-function qCook() {
-  var cook = prompt(userName + questions[4]).toUpperCase();
-  if (cook === responses[0] || cook === responses[1]) {
-    alert(answers[0]);
-    console.log('User said Yes.');
-    ++gameScore;
-  } else {
-    alert(answers[1]);
-    console.log('User said No.');
-  }
-}
-qCook();
+// function qCollege() {
+//   var college = prompt(userName + questions[0]).toUpperCase();
+//   if (college === responses[0] || college === responses[1]) {
+//     alert(answers[0]);
+//     console.log('User said Yes.');
+//     ++gameScore;
+//   } else {
+//     alert(answers[1]);
+//     console.log('User said No.');
+//   }
+// }
+//
+// qCollege();
+//
+// function qPhones() {
+//   var phones = prompt(userName + questions[1]).toUpperCase();
+//   if (phones === responses[0] || phones === responses[1]) {
+//     alert(answers[0]);
+//     console.log('User said Yes.');
+//     ++gameScore;
+//   } else {
+//     alert(answers[1]);
+//     console.log('User said No.');
+//   }
+// }
+// qPhones();
+//
+// function qLab() {
+//   var lab = prompt(userName + questions[2]).toUpperCase();
+//   if (lab === responses[0] || lab === responses[1]) {
+//     alert(answers[0]);
+//     console.log('User said Yes.');
+//     ++gameScore;
+//   } else {
+//     alert(answers[1]);
+//     console.log('User said No.');
+//   }
+// }
+// qLab();
+//
+// function qInsurance() {
+//   var insurance = prompt(userName + questions[3]).toUpperCase();
+//   if (insurance === responses[0] || insurance === responses[1]) {
+//     alert(answers[0]);
+//     console.log('User said Yes.');
+//     ++gameScore;
+//   } else {
+//     alert(answers[1]);
+//     console.log('User said No.');
+//   }
+// }
+// qInsurance();
+//
+// function qCook() {
+//   var cook = prompt(userName + questions[4]).toUpperCase();
+//   if (cook === responses[0] || cook === responses[1]) {
+//     alert(answers[0]);
+//     console.log('User said Yes.');
+//     ++gameScore;
+//   } else {
+//     alert(answers[1]);
+//     console.log('User said No.');
+//   }
+// }
+// qCook();
 
 function qCars() {
   var cars = 5;
